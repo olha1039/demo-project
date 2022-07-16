@@ -14,13 +14,10 @@ public class ConfigurationReader {
 			configFile = new Properties();
 			configFile.load(input);
 			input.close();
-
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
 	}
-
 	public static String getProperty(String keyName) {
 		return configFile.getProperty(keyName);
 	}
